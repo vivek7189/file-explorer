@@ -39,11 +39,11 @@ const FileExplorer: React.FC = () => {
     );
   };
 
-  const handleContextMenu = (event: React.MouseEvent, name: string) => {
-    event.preventDefault();
+  const handleContextMenu = (e: React.MouseEvent, name: string) => {
+    e.preventDefault();
     setContextMenu({
-      x: event.pageX,
-      y: event.pageY,
+      x: e.pageX,
+      y: e.pageY,
       visible: true,
       itemName: name,
     });
