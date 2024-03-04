@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import filesData, { FileNode } from './models';
 
+const ACTIONS:string[]=['Copy','Delete','Rename'];
+
 const ContextMenu: React.FC<{
   x: number;
   y: number;
@@ -14,9 +16,10 @@ const ContextMenu: React.FC<{
 
   return (
     <ul className="context-menu" style={{ top: y, left: x }}>
-      <li onClick={() => handleAction('copy')}>Copy</li>
-      <li onClick={() => handleAction('delete')}>Delete</li>
-      <li onClick={() => handleAction('rename')}>Rename</li>
+        {ACTIONS.map((action)=>{
+            return  <li onClick={() => handleAction(action)}>{action}</li>
+        })}
+    
     </ul>
   );
 };
