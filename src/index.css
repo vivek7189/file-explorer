@@ -1,0 +1,50 @@
+.file-item {
+  cursor: pointer;
+  user-select: none;
+}
+
+.App {
+  text-align: left;
+}
+.file-entry {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.file-entry:hover {
+  background-color: #f0f0f0;
+}
+
+.selected {
+  background-color: lightblue;
+}
+
+.context-menu {
+  position: absolute;
+  z-index: 1000;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 150px;
+}
+
+.context-menu {
+  position: absolute;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 5px 0;
+  margin: 0;
+  list-style: none;
+  z-index: 100;
+}
+
+.context-menu li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.context-menu li:hover {
+  background-color: #f0f0f0;
+}
